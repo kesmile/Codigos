@@ -17,5 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".basedatos.BaseActivity"/>
+        <activity android:name=".contentprovider.ContentActivity" />
     </application>
 </manifest>
