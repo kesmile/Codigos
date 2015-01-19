@@ -8,7 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
  * Created by root on 16/01/15.
  */
 public class UsuariosSQLiteHelper extends SQLiteOpenHelper {
-    String sqlCreate = "CREATE TABLE usuarios (usuario TEXT, password TEXT)";
+    String sqlCreate = "CREATE TABLE usuarios (_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,usuario TEXT, password TEXT)";
+
     public UsuariosSQLiteHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
